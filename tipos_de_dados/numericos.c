@@ -15,6 +15,8 @@ int main(int argc, char* argv[]){
 
     float dobro_do_peso = peso * 2;
     printf("O dobro do peso eh %.2f", dobro_do_peso);
+    float dobro_da_idade = idade * 2;
+    printf("O dobro do idade eh %.2f", dobro_da_idade);
 
     return 0;
 }
