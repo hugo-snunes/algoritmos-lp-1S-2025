@@ -2,14 +2,15 @@
 int main(int argc, char* argv[]){
 
 printf("Area do quadrado\n");
-int lado = 10;
-printf("\nDigite o valor do Lado:\n", lado);
-scanf("%d", &lado);
+float lado = 10;
+printf("\nDigite o valor do Lado:", lado);
+scanf("%f", &lado);
 
 printf("Formula: Area = Lado^2\n");
+printf("\nA = %.1f ^2\n", lado);
 
-int area = (lado*lado);
-printf("\nO valor da area do quadrado eh: %d", area);
+float area = lado*lado;
+printf("A = %.2f", area);
 
 return 0;
 

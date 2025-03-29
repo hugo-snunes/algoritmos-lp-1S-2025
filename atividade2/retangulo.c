@@ -3,19 +3,19 @@ int main(int argc, char* argv[]){
 
 printf("Area do retangulo\n");
 
-int altura = 10;
-int base = 10;
+float altura = 5.0;
+float base = 5.0;
 
-printf("\nDigite o valor do Altura:", altura);
-scanf("%d", &altura);
+printf("\nDigite o valor da Base:", base);
+scanf("%f", &base);
 
-printf("Digite o valor da Base:", base);
-scanf("%d", &base);
+printf("Digite o valor do Altura:", altura);
+scanf("%f", &altura);
 
 printf("\nFormula: Area = Base * Altura\n");
-
-int area = (altura*base);
-printf("\nO valor da area do retangulo eh: %d", area);
+printf("\nA = %.1f * %.1f\n", base, altura);
+float area = altura*base;
+printf("A = %.2f", area);
 
 return 0;
 
