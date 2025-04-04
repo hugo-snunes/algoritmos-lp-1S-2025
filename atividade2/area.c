@@ -20,6 +20,9 @@ float base_maior_trapezio;
 float base_menor_trapezio;
 float altura_trapezio;
 
+float altura_triangulo;
+float base_triangulo;
+
 
 
 printf("CALCULADORAS DE AREAS\n");
@@ -90,6 +93,17 @@ scanf("%f", &altura_retangulo);
     break;
 case 't':
     printf("Triangulo\n");
+    printf("\nDigite o valor do Altura:", altura_triangulo);
+scanf("%f", &altura_triangulo);
+
+printf("Digite o valor da Base:", base_triangulo);
+scanf("%f", &base_triangulo);
+
+printf("\nFormula: Area = Base * Altura / 2");
+printf("\nA = %.1f * %.1f / 2\n", altura_triangulo, base_triangulo);
+
+float area_triangulo = (altura_triangulo*base_triangulo)/2;
+printf("A = %.1f", area_triangulo);
     break;
 case 'z':
     printf("Trapezio\n");
