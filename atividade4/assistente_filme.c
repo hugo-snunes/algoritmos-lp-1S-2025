@@ -9,6 +9,10 @@ printf("\nEscolha um tipo: \n");
 printf("1 - Filme Leve\n");
 printf("2 - Filme Intenso\n");
    scanf("\n%d", &tipo);
+
+if(tipo > 2 || tipo < 1){
+printf("Opcao Invalida, tente novamente. \n");   
+}   
    
 if(tipo == 1){
 printf("Escolha o genero: \n");
@@ -19,10 +23,12 @@ printf("2 - Animacao\n");
 
 if(genero == 1){
 printf("Sugestao: As branquelas\n");
-}else if(genero == 2){
+}
+else if(genero == 2){
 printf("Sugestao: Toy Story\n");
-}else{
-printf("Opção Invalida, tente novamente.\n");
+}
+else{
+printf("Opcao Invalida, tente novamente.\n");
 }
 }
 if(tipo == 2){
@@ -39,10 +45,12 @@ printf("2 - Terror sobrenatural\n");
    
 if(subgenero == 1){
 printf("Sugestao: Corra!\n");
-}else if(subgenero == 2){
+}
+else if(subgenero == 2){
 printf("Sugestao: Invocacao do Mal\n");
-}else{
-printf("Opção Invalida, tente novamente.\n");
+}
+else{
+printf("Opcao Invalida, tente novamente.\n");
 }
 }
 if(genero == 2){
@@ -53,10 +61,12 @@ printf("2 - Aventura realista\n");
    
 if(subgenero == 1){
 printf("Sugestao: Vingadores ultimato\n");    
-}else if(subgenero == 2){
+}
+else if(subgenero == 2){
 printf("Sugestao: Mad max: Estrada furia\n");
-}else{
-printf("Opção Invalida, tente novamente.\n");
+}
+else{
+printf("Opcao Invalida, tente novamente.\n");
 }
 
 }
