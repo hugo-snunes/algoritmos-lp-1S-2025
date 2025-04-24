@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(int argc, char* argv[]) {
-int qtdalunos;
+int qtdalunos = 0;
     printf("Gerenciador de Notas\n");
 
-    printf("\nQuantos alunos ha na turma? \n");
+    printf("\nInforme a quantidade de alunos: \n");
     scanf("%d", &qtdalunos);
 
 float notas[qtdalunos];
@@ -13,8 +13,10 @@ float maior_nota, menor_nota;
 int aluno_maior_nota = 0, aluno_menor_nota = 0, aprovados = 0;
 
 for (int i = 0; i < qtdalunos; i++) {
+do{    
     printf("\nDigite a nota do Aluno %d: \n",i + 1);
     scanf("%f", &notas[i]);
+}while(notas[i] > 10.0 || notas[i] < 0.0);
 
 soma = soma + notas[i]; // somando todas as notas
 
@@ -63,6 +65,5 @@ if (k >= 1 && k <= qtdalunos) {
 } else {
     printf("Opcao invalida, tente novamente.\n");
 }
-
     return 0;
 }
