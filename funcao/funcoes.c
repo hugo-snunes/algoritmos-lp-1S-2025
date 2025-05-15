@@ -2,7 +2,7 @@
 
 /** Declaração de função
 A função tem por objetivo: ler um valor dentre 2 opções válidas
-A função deve retornar o valor válido lido
+A função deve retornar o valor válido lido 
 **/
 int ler_valor_valido(int opcao1, int opcao2, char* texto_opcao1, char* texto_opcao2, char* texto_adicional){
     //Código da função
@@ -33,7 +33,7 @@ if(resposta == 2){
 }else{
     printf("Pode melhorar!");
 }
-
+//veio
 }
     return 0;
 }
