@@ -22,7 +22,6 @@ int menor;
     return menor;
 }
 
-
 //Retorna o maior entre 3 números inteiros
 
 int maior_3n(int a, int b, int c){
@@ -43,5 +42,26 @@ for(int i = 0; i < n; i++){
     maior = maior_2n(maior, numeros[i]);
 }
     return maior;
+}
+
+//verifica se um dado numero eh primo (1) ou nao (0)
+
+int verificar_numero_primo(int n){
+
+    if(n < 2){
+    return 1;    
+    }
+
+    if((n % 2 == 0) && (n != 2)){
+
+    return 0;
+}
+
+for(int i = 3; i < n; i+=2){
+    if(n % i == 0){
+    return 0;    
+    }
+}
+
 }
 

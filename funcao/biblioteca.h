@@ -13,3 +13,7 @@ int menor_3n(int a, int b, int c);
 
 //Retorna o maior entre n números inteiros
 int maior_n(int numeros[], int n);
+
+//verifica se dado numero é primo
+
+int verficar_numero_primo(int n);
